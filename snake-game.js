@@ -138,7 +138,6 @@ $g.ready(() => {
         url: 'http://www.splashbase.co/api/v1/images/random',
         success: (data) => {
           let body = $g("body").elements[0]
-          debugger
           body.style.backgroundImage = ``
           body.style.background = `url(${JSON.parse(data).url})`
           body.style.backgroundSize = 'cover'
