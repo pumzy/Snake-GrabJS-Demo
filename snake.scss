@@ -1,10 +1,48 @@
 body {
-  background-color: grey;
+  background-color: green;
+  height: 100%;
+  overflow: hidden;
+  opacity: 1.0;
+  -webkit-transition: background 0.5s linear;
+  -moz-transition: background 0.5s linear;
+  -o-transition: background 0.5s linear;
+  -ms-transition: background 0.5s linear;
+  transition: background 0.5s linear;
+
 }
 
 #canvas {
   display: block;
   margin: 5px auto;
   border: 10px solid #657;
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+}
+
+.dev-icons{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+
+img{
+  height: 80px;
+  padding: 10px;
+}
+
+button {
+  color: white;
+  line-height: 50px;
+  height: 50px;
+  text-align: center;
+  width: 250px;
+  cursor: pointer;
+  background-color: inherit;
+  border: 1px solid white;
+  margin: 5px;
 
 }

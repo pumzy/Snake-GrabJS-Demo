@@ -120,10 +120,30 @@ $g.ready(() => {
 
   $g.keydown( (e) => {
     let key = e.which;
-
     if((key === 37 || key === 65 ) && direction !== "right") direction = "left";
     else if((key === 38 || key === 87) && direction !== "up") direction = "down";
     else if((key === 39 || key === 68 )&& direction !== "left") direction = "right";
     else if((key === 40 || key === 83) && direction !== "down") direction = "up";
+  })
+
+  $g('button').on("click", (e) => {
+    let colorarr = ['blue', 'green', 'red']
+    let body = $g("body").elements[0]
+    if (e.target.className === 'background-change-color'){
+      body.style.backgroundImage = ``
+      body.style.backgroundColor = colorarr[Math.floor(Math.random()*3)]
+    } else if (e.target.className === 'background-change-image'){
+      $g.ajax({
+        method: 'GET',
+        url: 'http://www.splashbase.co/api/v1/images/random',
+        success: (data) => {
+          let body = $g("body").elements[0]
+          debugger
+          body.style.backgroundImage = ``
+          body.style.background = `url(${JSON.parse(data).url})`
+          body.style.backgroundSize = 'cover'
+        }
+      })
+    }
   })
 })
