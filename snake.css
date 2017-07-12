@@ -1,7 +1,9 @@
 body {
-  background-color: green;
-  height: 100%;
-  overflow: hidden;
+  background-image: url('./images/wood.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*height: 100%;*/
+
   opacity: 1.0;
   -webkit-transition: background 0.5s linear;
   -moz-transition: background 0.5s linear;
@@ -29,6 +31,56 @@ h1 {
 
 }
 
+
+.description-div{
+  display: flex;
+  justify-content: center;
+
+}
+
+.description{
+  color:white;
+  /*font-weight: bold;*/
+
+  font-style: oblique;
+  text-align: center;
+  line-height: 25px;
+  width: 346px;
+  font-style: oblique;
+  text-align: center;
+  box-sizing: border-box;
+  line-height: 25px;
+  padding: 0px 10px;
+}
+
+.github-button{
+  border-left: 2px solid grey;
+  height: 100%;
+  /*box-sizing: border-box;*/
+  font-size: 15px;
+  padding: 0px 15px;
+  line-height: 50px;
+  text-decoration: none;
+  color: white;
+  border-left: 2px solid grey;
+  height: 100%;
+  width: 138px;
+  background: #114357; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #114357, #f29492); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #114357, #f29492); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  text-align: center;
+}
+
+.center-description{
+  border: 2px solid grey;
+  box-sizing: border-box;
+  display: flex;
+
+  flex-direction: row;
+  /*background-color: red;*/
+
+}
+
 img{
   height: 80px;
   padding: 10px;
@@ -45,4 +97,13 @@ button {
   border: 1px solid white;
   margin: 5px;
 
+}
+
+#li-gt {
+
+  position: absolute;
+top: 20px;
+right: 1px;
+width: 236px;
+}
 }

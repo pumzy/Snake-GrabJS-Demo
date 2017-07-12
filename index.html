@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>GrabJS Snake</title>
     <script type="text/javascript" src="./GrabJS/grabjs.js"></script>
-    <link rel="stylesheet" type="text/css" href="./snake.css">
+    <link rel="stylesheet" type="text/css" href="snake.css">
     <script type="text/javascript" src="./snake-game.js">
 
     </script>
@@ -13,7 +13,12 @@
   <body>
     <div class='change-color'>
     <h1> <img id="header-image" src="./images/GrabJS-Snake.png"/></h1>
-
+    <div class='description-div'>
+      <div class='center-description' style='width:520px;'>
+        <div class='description'> This game was made using the GrabJS library. For more details, click the button! </div>
+        <a  href='http://github.com/pumzy/Snake-GrabJS-Demo' target='_blank' class='github-button' >Github Responitory</a>
+      </div>
+    </div>
     <canvas id="canvas"  width="500" height="500"></canvas>
     <br>
 
@@ -22,7 +27,9 @@
       <button class="background-change-color"> Change Background Color! </button>
     </div>
 
-    <div class="dev-icons">
+
+
+    <div class="dev-icons" id='li-gt'>
       <a href="https://github.com/pumzy">
           <img id="github-image" src="./images/github-logo.png"/>
       </a>
@@ -30,6 +37,8 @@
           <img id="linkedin-image" src="./images/linkedin-image.svg"/>
       </a>
     </div>
+
+
   </div>
   </body>
 </html>

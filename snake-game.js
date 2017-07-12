@@ -119,6 +119,7 @@ $g.ready(() => {
 
 
   $g.keydown( (e) => {
+    e.preventDefault()
     let key = e.which;
     if((key === 37 || key === 65 ) && direction !== "right") direction = "left";
     else if((key === 38 || key === 87) && direction !== "up") direction = "down";
@@ -130,7 +131,7 @@ $g.ready(() => {
     let colorarr = ['blue', 'green', 'red']
     let body = $g("body").elements[0]
     if (e.target.className === 'background-change-color'){
-      body.style.backgroundImage = ``
+      body.style.backgroundImage = `url()`
       body.style.backgroundColor = colorarr[Math.floor(Math.random()*3)]
     } else if (e.target.className === 'background-change-image'){
       $g.ajax({
